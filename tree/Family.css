@@ -1,0 +1,102 @@
+.box-3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    background-color: green;
+}
+
+.span {
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    margin: 8vh auto;
+    color: white;
+    font-size: 4vw;
+    font-weight: 600;
+    display: flex;
+    margin: 5vh auto;
+    font-family: cursive;
+    border: solid 10px;
+    padding: 2vh 2vw;
+    animation: spin 0.9s linear infinite;
+    border-image: repeating-linear-gradient(90deg,  lime, rgb(50, 250, 50),lawngreen, lightgreen,white 180px) 1;
+}
+
+@keyframes spin {
+    0% {
+        border-image: repeating-linear-gradient(-30deg, lime, rgb(50, 250, 50),lawngreen, lightgreen,white 80px) 1;
+    }
+
+    10% {
+        border-image: repeating-linear-gradient(30deg, lime, rgb(50, 250, 50), lightgreen,white 80px) 2;
+    }
+
+    20% {
+        border-image: repeating-linear-gradient(60deg, lime, rgb(50, 250, 50),lawngreen, lightgreen,white 80px) 3;
+    }
+
+    40% {
+        border-image: repeating-linear-gradient(90deg, lime, rgb(50, 250, 50), lightgreen,white 80px) 4;
+    }
+
+    60% {
+        border-image: repeating-linear-gradient(120deg, lime, rgb(50, 250, 50),lawngreen, lightgreen,white 80px) 5;
+    }
+
+    80% {
+        border-image: repeating-linear-gradient(150deg, lime, rgb(50, 250, 50), lightgreen,white 80px) 6;
+    }
+
+    100% {
+        border-image: repeating-linear-gradient(180deg, lime, rgb(50, 250, 50), lawngreen, lightgreen,white 80px) 7;
+    }
+
+}
+ol{
+    -webkit-user-select: auto ;
+}
+li{
+    visibility: visible;
+    width: fit-content;
+    height: max-content;
+    -webkit-user-select: inherit ;
+}
+
+.box-3-inner {
+    width: max-content;
+    height: max-content;
+    place-items: center;
+    overflow-x: hidden;
+    /* background-color: rgb(0, 150, 0); */
+}
+
+.box-3-inner>.container>.container>button {
+    display: grid;
+    color: white;
+    place-items: center;
+    width: max-content;
+    border: solid 2px white;
+    background-color: green;
+}
+
+.in-box>button {
+    display: grid;
+    color: white;
+    place-items: center;
+    width: max-content;
+    margin: 15px 25px;
+    border: solid 2px white;
+    background-color: green;
+}
+.ch-1{
+    display: grid;
+    color: white;
+    place-items: center;
+    width: max-content;
+    margin: 8px  5px;
+    /* margin: 10px 20px; */
+    border: solid 2px white;
+    background-color: green;
+}
+

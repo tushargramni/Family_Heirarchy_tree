@@ -1,0 +1,88 @@
+.box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    border-radius: 18pt;
+    background-color: #8f8;
+}
+
+
+
+.nav-home{
+    display: grid;
+    height: 100vh;
+    width: min-content;
+    margin: 0px 2vw;
+    border-radius: 50px;
+    background-color: green;
+}
+
+
+
+.im-1{
+    width: 8vw;
+    margin: auto;
+}
+
+
+
+.box-2{
+    display: grid;
+    color: white;
+    font-size: 5vw;
+    margin-top: 18%;
+    padding:  2% 1%;
+    width: 60%;
+    font-family: cursive;
+    height: max-content;
+    place-items: center;
+    text-align: center;
+    border-radius: 50px 0px 50px 0px;
+    background-color: rgb(50,180,50);
+    
+}
+.spin {
+    height: 14px;
+    width: 14px;
+    margin-left: 2px;
+    border-radius: 50%;
+    animation-delay: 1s;
+    border: dotted 5px white;
+    animation: spin 0.5s linear ;
+}
+@keyframes spin {
+    100% {
+        border: dotted 5px white;
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        border-image: repeating-linear-gradient(-30deg, lime, rgb(50, 250, 50),lawngreen, lightgreen,white 80px) 1;
+    }
+
+    10% {
+        border-image: repeating-linear-gradient(30deg, lime, rgb(50, 250, 50), lightgreen,white 80px) 2;
+    }
+
+    20% {
+        border-image: repeating-linear-gradient(60deg, lime, rgb(50, 250, 50),lawngreen, lightgreen,white 80px) 3;
+    }
+
+    40% {
+        border-image: repeating-linear-gradient(90deg, lime, rgb(50, 250, 50), lightgreen,white 80px) 4;
+    }
+
+    60% {
+        border-image: repeating-linear-gradient(120deg, lime, rgb(50, 250, 50),lawngreen, lightgreen,white 80px) 5;
+    }
+
+    80% {
+        border-image: repeating-linear-gradient(150deg, lime, rgb(50, 250, 50), lightgreen,white 80px) 6;
+    }
+
+    100% {
+        border-image: repeating-linear-gradient(180deg, lime, rgb(50, 250, 50), lawngreen, lightgreen,white 80px) 7;
+    }
+
+}
